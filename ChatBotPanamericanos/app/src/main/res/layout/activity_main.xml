@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/fondo3"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -18,7 +19,14 @@
             android:id="@+id/messagesTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorWhite"
+            android:textSize="18dp"
+            android:fontFamily="casual"
+            android:textColor="@color/colorPrimaryDark"
             android:scrollbarSize="16sp"/>
         
     </ScrollView>
@@ -36,14 +44,17 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="start"
-            android:layout_margin="5dp"
+            android:layout_margin="8dp"
             android:padding="15dp"
             android:layout_toStartOf="@+id/sendButton"
+            android:background="@color/colorWhite"
             android:layout_alignParentStart="true"
             android:hint="Ingrese aqui su Consulta"
+            android:fontFamily="casual"
+            android:textSize="20dp"
             android:imeOptions="actionDone"
             android:inputType="textShortMessage"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@+id/sendButton" />
 
@@ -51,7 +62,7 @@
             android:id="@+id/sendButton"
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:text="Send"
+            android:background="@drawable/send"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true" />
 
